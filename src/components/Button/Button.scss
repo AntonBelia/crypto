@@ -1,0 +1,22 @@
+text {
+	text-shadow: 0 3px 6px rgba(0, 0, 0, 0.55);
+	font-weight: 700;
+	font-family: 'Arial', sans-serif;
+}
+
+svg {
+	width: 100%;
+}
+
+button {
+	width: 400px;
+	padding: 0;
+	cursor: pointer;
+	border: none;
+	background: none;
+	transition: transform 0.5s;
+}
+
+button:hover {
+	transform: scale(.95);
+}

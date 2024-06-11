@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Аmit Israel",
+    "wins": 89,
+    "avatarUrl": "avatar/1-25.png"
+  },
+  {
+    "name": "Sigal Amiranovich",
+    "wins": 81,
+    "avatarUrl": "avatar/1-33.png"
+  },
+  {
+    "name": "Amit Cohen",
+    "wins": 80,
+    "avatarUrl": "avatar/1-35.png"
+  },
+  {
+    "name": "John Smith",
+    "wins": 75,
+    "avatarUrl": "avatar/1-25.png"
+  },
+  {
+    "name": "Michael Brown",
+    "wins": 70,
+    "avatarUrl": "avatar/1-33.png"
+  }
+]
