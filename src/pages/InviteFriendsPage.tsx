@@ -2,7 +2,7 @@ import React from 'react';
 
 import PlayerList from "../components/PlayerList/PlayerList";
 
-import players from "../helpers/api/players.json"
+// import players from "../helpers/api/players.json"
 
 const InviteFriendsPage = () => {
   return (
@@ -14,7 +14,7 @@ const InviteFriendsPage = () => {
             <h1>LEADING PLAYERS IN NUMBER OF WINS</h1>
           </div>
           <div className="card-content">
-						<PlayerList players={players} />
+						<PlayerList />
           </div>
         </div>
       </div>

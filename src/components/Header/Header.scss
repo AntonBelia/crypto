@@ -10,51 +10,36 @@
   position: sticky;
   top: 0;
   z-index: 100;
-}
 
-.header-left {
-  display: flex;
-  align-items: center; /* added */
-}
+  &-left {
+    display: flex;
+    align-items: center; 
+  }
 
-.header-right {
-  display: flex;
-  justify-content: center;
-  align-items: center; /* added */
-}
+  &-right {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+		gap: 0.5rem;
+  }
 
-.header-friends-text {
-  background: linear-gradient(#fbeea7 25%, #f2ce59 75%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 3px 1px black);
-  text-align: center;
-  margin: 0;
-	margin-top: -8px;
-}
+  &-text {
+    background: linear-gradient(#fbeea7 25%, #f2ce59 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 3px 1px black);
+    text-align: center;
+    margin: 0;
+    margin-top: -8px;
+  }
 
-.header-coin-text {
-	background: linear-gradient(#fbeea7 25%, #f2ce59 75%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 3px 1px black);
-  text-align: center;
-  margin: 0;
-	margin-top: -8px;
-}
+  .header-bell {
+    height: 30px;
+    width: 30px;
+    margin: 0 10px;
+  }
 
-.logo-header {
-  height: 40px;
-  width: 40px;
-  margin: 0 10px; 
-}
-
-.header-bell {
-  height: 30px;
-  width: 30px;
-  margin: 0 10px; 
-}
-
-.avatar {
-  margin: 0 10px;
+  .logo-header {
+    
+  }
 }

@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Player from '../Player/Player';
+import getAllPlayers from '../../helpers/api/players';
+import { PlayerProps } from '../../helpers/types/PlayerProps'
 
 import './PlayerList.scss';
 
-interface PlayerListProps {
-  players: {
-    name: string;
-    wins: number;
-    avatarUrl: string;
-  }[];
-}
+const PlayerList: React.FC = () => {
+  const [players, setPlayers] = useState<PlayerProps[]>([]);
 
-const PlayerList: React.FC<PlayerListProps> = ({ players }) => {
+  useEffect(() => {
+    const fetchPlayers = async () => {
+      const playersData = await getAllPlayers();
+			playersData.sort((playerA:PlayerProps, playerB:PlayerProps) => playerB.wins - playerA.wins)
+      setPlayers(playersData);
+    };
+
+    fetchPlayers();
+  }, []);
+
   return (
     <div className="player-list">
       {players.map((player, index) => (

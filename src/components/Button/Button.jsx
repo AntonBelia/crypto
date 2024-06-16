@@ -1,4 +1,6 @@
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
+
 
 import 'Button.scss';
 
@@ -8,7 +10,7 @@ const Button = ({ text }) => {
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 60">
             <defs>
               <linearGradient
-                id="textGradient"
+                id={uuidv4()}
                 x1="0%"
                 y1="100%"
                 x2="0%"

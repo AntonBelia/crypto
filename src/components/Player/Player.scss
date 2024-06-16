@@ -1,53 +1,23 @@
 .player {
 	position: relative;
+	width: 100%;
   display: flex;
   padding: 0.1rem;
-}
 
-.player-info {
-  flex: 1;
-}
+	&-info {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		padding-left: 10px;
+		gap: 0.3rem;
 
-.player-info h3 {
-  margin-bottom: 0.5rem;
-	text-align: left;
-  font-size: 1.0rem;
-  font-weight: 100;
-	margin-left: 1rem;
-}
+		& h3 {
+			font-size: 1.0rem;
+			font-weight: 100;
+		}
 
-.player-info p {
-  font-size: 1.5rem;
-	text-align: left;
-	margin-left: 1rem;
-}
-
-.first {
-	content: "";
-	position: absolute;
-	top: 30px;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: url(../../helpers/icon/1.png) no-repeat; 
-}
-
-.second {
-	content: "";
-	position: absolute;
-	top: 30px;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: url(../../helpers/icon/2.png) no-repeat; 
-}
-
-.third {
-	content: "";
-	position: absolute;
-	top: 30px;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: url(../../helpers/icon/3.png) no-repeat; 
+		& span {
+			font-size: 1.5rem;
+		}
+	}
 }
