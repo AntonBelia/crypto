@@ -7,7 +7,6 @@ interface AvatarProps {
 }
 
 const Avatar = ({ avatarUrl }: AvatarProps) => {
-	
   return (
     <div className="avatar">
       <img src={avatarUrl} alt="Avatar" />

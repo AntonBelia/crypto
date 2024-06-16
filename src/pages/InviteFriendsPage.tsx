@@ -2,8 +2,6 @@ import React from 'react';
 
 import PlayerList from "../components/PlayerList/PlayerList";
 
-// import players from "../helpers/api/players.json"
-
 const InviteFriendsPage = () => {
   return (
     <div className="invite-friends-page">

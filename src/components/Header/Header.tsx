@@ -1,5 +1,5 @@
 import React from "react";
-import IconWithText from "../IconWithText/IconWithText";
+import IconWithText from "../ui/IconWithText/IconWithText";
 
 import Avatar from "../Avatar/Avatar";
 
@@ -12,8 +12,8 @@ import userFoto from "../../helpers/icon/user.png";
 import Icon from "../ui/Icon/Icon";
 
 const Header: React.FC = () => {
-	const friendsCount = "223";
-	const coinsCount = "25.000"
+  const friendsCount = "223";
+  const coinsCount = "25.000";
 
   return (
     <header className="header">

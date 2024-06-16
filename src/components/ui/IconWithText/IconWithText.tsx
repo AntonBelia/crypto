@@ -1,7 +1,7 @@
-import React from 'react';
-import Icon from '../ui/Icon/Icon';
+import React from "react";
+import Icon from "../Icon/Icon";
 
-import './IconWithText.scss';
+import "./IconWithText.scss";
 
 interface IconWithTextProps {
   src: string;

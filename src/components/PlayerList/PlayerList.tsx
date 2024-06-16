@@ -5,6 +5,8 @@ import { PlayerProps } from '../../helpers/types/PlayerProps'
 
 import './PlayerList.scss';
 
+import playersLocal from "../..//helpers/api/players.json"
+
 const PlayerList: React.FC = () => {
   const [players, setPlayers] = useState<PlayerProps[]>([]);
 
@@ -15,17 +17,20 @@ const PlayerList: React.FC = () => {
       setPlayers(playersData);
     };
 
-    fetchPlayers();
+    // fetchPlayers();
+
+		playersLocal.sort((playerA:PlayerProps, playerB:PlayerProps) => playerB.wins - playerA.wins)
+		setPlayers(playersLocal);
   }, []);
 
   return (
-    <div className="player-list">
+    <ul className="player-list">
       {players.map((player, index) => (
-        <div key={index} className="player-list-item">
+        <li key={index} className="player-list-item">
           <Player name={player.name} wins={player.wins} avatarUrl={player.avatarUrl} index={index} />
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 
